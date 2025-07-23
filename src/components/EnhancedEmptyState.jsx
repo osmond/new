@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { Icon } from 'apptile-core';
 import moment from 'moment';
 
-export function IntelligentPlantCard({ 
+export function EnhancedEmptyState({
   plant, 
   onPress, 
   onWater, 
