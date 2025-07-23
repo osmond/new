@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { useToast } from 'react-native-toast-notifications';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import { useApptileWindowDims, navigateToScreen, Icon } from 'apptile-core';
 import { SmartCareOverview } from './SmartCareOverview';
@@ -14,6 +15,7 @@ export function ReactComponent({ model }) {
   const id = model.get('id');
   const { width, height } = useApptileWindowDims();
   const dispatch = useDispatch();
+  const toast = useToast();
   
   // Get props from model
   const showQuickStats = model.get('showQuickStats') !== false; // default true
