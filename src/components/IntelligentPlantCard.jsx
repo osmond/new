@@ -3,7 +3,14 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { Icon } from 'apptile-core';
 import moment from 'moment';
 
-export function PlantCard({ plant, onPress, onWater, themeColors, style, index }) {
+export function IntelligentPlantCard({
+  plant,
+  onPress,
+  onWater,
+  themeColors,
+  style,
+  index
+}) {
   const isListStyle = style === 'list';
   
   const getStatusText = () => {
