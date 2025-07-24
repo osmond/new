@@ -44,3 +44,11 @@ smart-plant-dashboard/
     ├── styles.js
     └── widget.jsx
 ```
+
+## Running Tests
+
+Run Jest tests with:
+
+```bash
+npm test
+```
