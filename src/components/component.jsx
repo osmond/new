@@ -8,7 +8,7 @@ import { IntelligentPlantCard } from './IntelligentPlantCard';
 import { SmartInsights } from './SmartInsights';
 import { TodaysCareTasks } from './TodaysCareTasks';
 import { EnhancedEmptyState } from './EnhancedEmptyState';
-import { styles } from './styles';
+import { styles } from '../styles';
 import moment from 'moment';
 
 export function ReactComponent({ model }) {
